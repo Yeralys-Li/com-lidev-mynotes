@@ -1,8 +1,24 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Contains the core android tools version
+        appVersions = [
+                versionCode: 1,
+                versionName: "0.0.1",
+        ]
+        androidVersions = [
+                compileSdk: 33, // Android 13
+                targetSdk : 33, // Android 13
+                minSdk    : 24, // Android 7.0
+        ]
+    }
+
+}
 plugins {
     alias libs.plugins.com.android.application apply false
     alias libs.plugins.com.android.library apply false
     alias libs.plugins.org.jetbrains.kt.android apply false
     alias libs.plugins.com.github.ben.manes
     alias libs.plugins.nl.littlerobots.catalog.update
+    alias libs.plugins.org.jetbrains.kt.jvm
 }

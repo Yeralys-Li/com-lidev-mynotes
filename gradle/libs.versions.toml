@@ -15,6 +15,7 @@ test-espresso-core = "3.5.1"
 gradle-plugin-version = "8.0.0"
 android-library-plugin-version = "8.0.0"
 kt-android-plugin-version = "1.7.20"
+org-jetbrains-kt-jvm-version ="1.8.0"
 
 #catalog version
 com-github-ben-manes-version = "0.41.0"
@@ -46,6 +47,7 @@ androidx-test-compose-ui-manifest = { module = "androidx.compose.ui:ui-test-mani
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "gradle-plugin-version" }
 com-android-library = { id = "com.android.library", version.ref = "android-library-plugin-version" }
+org-jetbrains-kt-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kt-jvm-version" }
 org-jetbrains-kt-android = { id = "org.jetbrains.kotlin.android", version.ref = "kt-android-plugin-version" }
 com-github-ben-manes = {id= "com.github.ben-manes.versions",version.ref="com-github-ben-manes-version"}
 nl-littlerobots-catalog-update = {id= "nl.littlerobots.version-catalog-update",version.ref="nl-littlerobots-catalog-update-version"}

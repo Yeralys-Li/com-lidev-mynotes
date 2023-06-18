@@ -3,19 +3,16 @@ plugins {
     alias(libs.plugins.org.jetbrains.kt.android)
 }
 
-def VERSION_NAME = "1.0"
-def VERSION_CODE = 1
-
 android {
     namespace 'com.lidev.mynotes'
-    compileSdk 33
+    compileSdk androidVersions.compileSdk
 
     defaultConfig {
         applicationId "com.lidev.mynotes"
-        minSdk 24
-        targetSdk 33
-        versionCode VERSION_CODE
-        versionName VERSION_NAME
+        minSdk androidVersions.minSdk
+        targetSdk androidVersions.targetSdk
+        versionCode appVersions.versionCode
+        versionName appVersions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
