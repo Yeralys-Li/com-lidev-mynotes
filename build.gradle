@@ -3,4 +3,6 @@ plugins {
     alias libs.plugins.com.android.application apply false
     alias libs.plugins.com.android.library apply false
     alias libs.plugins.org.jetbrains.kt.android apply false
+    alias libs.plugins.com.github.ben.manes
+    alias libs.plugins.nl.littlerobots.catalog.update
 }

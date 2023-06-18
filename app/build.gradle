@@ -64,7 +64,6 @@ android {
 }
 
 dependencies {
-
     //Core
     implementation libs.androidx.core.ktx
 
