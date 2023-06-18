@@ -145,4 +145,8 @@ fabric.properties
 /captures
 .cxx
 
+#Others
+.idea/git_toolbox_prj.xml
+.idea/kotlinc.xml
+
 # End of https://www.toptal.com/developers/gitignore/api/androidstudio
